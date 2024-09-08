@@ -1,8 +1,8 @@
 function Hero() {
     return (
         <div className=" mx-auto overflow-x-hidden flex flex-col items-center gap-10">
-            <h1>Build your dream tech team</h1>
-            <p className="text-[1.25rem]">Flexiple is your 1-stop solution to hire dream developers for full-time or contract roles</p>
+            <h1 className="max-sm:text-center">Build your dream tech team</h1>
+            <p className="max-sm:text-center text-[1.25rem]">Flexiple is your 1-stop solution to hire dream developers for full-time or contract roles</p>
             <button
                 className='w-fit px-[1.5rem] py-[.25rem]  rounded-xl bg-[#7c35c7] hover:bg-[#4d217b] text-xl'
 
