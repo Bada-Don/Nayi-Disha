@@ -12,16 +12,19 @@ function NavBar() {
         <nav className='transition-all duration-500 bg-black backdrop-blur-sm mb-10 rounded-b-xl py-[1rem] px-[12.5%] flex flex-row justify-between items-center w-[100%] max-sm:w-[100%] max-sm:px-0 max-sm:sticky max-sm:top-0'>
             <div className="max-sm:px-7 logo flex flex-row items-center w-fit gap-5">
                 {/* Menu Icon */}
-                <ion-icon
-                    onClick={onToggleMenu}
-                    name={menuOpen ? 'close' : 'menu'} // Conditional rendering of icon
-                    className="text-3xl cursor-pointer md:hidden"
-                    size="large"
-                ></ion-icon>
+                <div className='cursor-pointer hidden max-sm:block'>
+
+                    <ion-icon
+                        onClick={onToggleMenu}
+                        name={menuOpen ? 'close' : 'menu'}
+                        size="large"
+                    ></ion-icon>
+                </div>
+
                 <h3 className='max-sm:text-lg'>Nayi Disha</h3>
             </div>
             {/* Nav Links */}
-            <ul className={`nav-links flex flex-row gap-10 max-xl:flex-col max-xl:bg-black max-sm:items-center max-xl:w-full max-xl:h-auto max-xl:absolute max-xl:left-0 transition-all duration-500 ${menuOpen ? 'top-[100%]' : 'top-[-1000px]'}`}>
+            <ul className={`nav-links flex flex-row gap-10 max-xl:flex-col max-xl:bg-black max-xl:items-center max-xl:w-full max-xl:h-auto max-xl:absolute max-xl:left-0 transition-all duration-500 ${menuOpen ? 'top-[100%]' : 'top-[-1000px]'}`}>
                 <li className='max-sm:my-6 cursor-pointer text-[1.1rem] text-[#b9b8b8] flex gap-3'>For Companies <img src={droparrow} className='w-3' alt="" /></li>
                 <li className='max-sm:my-6 cursor-pointer text-[1.1rem] text-[#b9b8b8] flex gap-3'>For Talent <img src={droparrow} className='w-3' alt="" /></li>
                 <li className='max-sm:my-6 cursor-pointer text-[1.1rem] text-[#b9b8b8] flex gap-3'>Our Products <img src={droparrow} className='w-3' alt="" /></li>
