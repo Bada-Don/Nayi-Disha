@@ -7,9 +7,9 @@ import unstop from "/Unstop.svg"
 
 function Companies() {
     return (
-        <div className="flex w-[80%] justify-between">
-            <div className="flex w-[40%] flex-col items-center">
-                <h2>Connected Companies</h2>
+        <div className="flex w-[80%] justify-between flex-wrap max-xl:gap-10">
+            <div className="flex w-[40%] max-xl:w-full flex-col items-center">
+                <h2 >Connected Companies</h2>
                 <div className="flex
                 flex-row flex-wrap justify-evenly gap-10">
                     <img src="https://flexiple.com/_next/static/media/Plivo.0cb93148.svg" alt="" srcset="" />
@@ -19,7 +19,7 @@ function Companies() {
                     <img src="https://flexiple.com/_next/static/media/StarbourneLabs.40dc21c7.svg" alt="" />
                 </div>
             </div>
-            <div className="flex w-[40%] flex-col items-center">
+            <div className="flex w-[40%] max-xl:w-full flex-col items-center">
                 <h2>Courses From</h2>
                 <div className="flex
                 flex-row flex-wrap justify-evenly gap-10">

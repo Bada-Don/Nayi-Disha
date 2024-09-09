@@ -9,8 +9,8 @@ function NavBar() {
     };
 
     return (
-        <nav className='transition-all duration-500 bg-black backdrop-blur-sm mb-10 rounded-b-xl py-[1rem] px-[12.5%] flex flex-row justify-between items-center w-[100%] max-sm:w-[100%] max-sm:px-0 max-sm:sticky max-sm:top-0'>
-            <div className="max-sm:px-7 logo flex flex-row items-center w-fit gap-5">
+        <nav className='transition-all duration-500 bg-black backdrop-blur-sm mb-10 rounded-b-xl py-[1rem] px-[12.5%] flex flex-row justify-between items-center w-screen max-sm:w-[100%] max-sm:px-0 max-sm:sticky max-sm:top-0'>
+            <div className="max-sm:px-7 logo flex flex-row items-center gap-5">
                 {/* Menu Icon */}
                 <div className='cursor-pointer hidden max-sm:block'>
 
@@ -21,7 +21,7 @@ function NavBar() {
                     ></ion-icon>
                 </div>
 
-                <h3 className='max-sm:text-lg'>Nayi Disha</h3>
+                <h3 className='cursor-pointer max-sm:text-lg'>Nayi Disha</h3>
             </div>
             {/* Nav Links */}
             <ul className={`nav-links flex flex-row gap-10 max-xl:flex-col max-xl:bg-black max-xl:items-center max-xl:w-full max-xl:h-auto max-xl:absolute max-xl:left-0 transition-all duration-500 ${menuOpen ? 'top-[100%]' : 'top-[-1000px]'}`}>
