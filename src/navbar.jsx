@@ -9,7 +9,7 @@ function NavBar() {
     };
 
     return (
-        <nav className='transition-all duration-500 bg-black backdrop-blur-sm mb-10 rounded-b-xl py-[1rem] px-[12.5%] flex flex-row justify-between items-center w-screen max-sm:w-[100%] max-sm:px-0 max-sm:sticky max-sm:top-0'>
+        <nav className='transition-all duration-500 bg-black backdrop-blur-sm mb-10 rounded-b-xl py-[1rem] px-[12.5%] flex flex-row justify-between items-center w-screen max-sm:w-[100%] max-sm:px-0 max-xl:sticky  max-sm:top-0'>
             <div className="max-sm:px-7 logo flex flex-row items-center gap-5">
                 {/* Menu Icon */}
                 <div className='cursor-pointer hidden max-sm:block'>
